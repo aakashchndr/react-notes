@@ -1,13 +1,133 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-mode {
+  background-color: #e2e2e3;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+
+.dark-mode {
+  background-color: #202124;
+}
+
+.dark-mode h1 {
+  color: #e2e2e3;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-height: 100vh;
+}
+
+.search-icon {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  background-color: #e2e2e3;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 1.6em;
+}
+
+.searchbar input {
+  border: none;
+  background-color: #e2e2e3;
+}
+
+.searchbar input:focus {
+  max-width: 940px;
+  outline: none;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.note.new {
+  background-color: #ccff90;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: #ccff90;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.save {
+  background-color: #8bdb40;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+
+.save:hover {
+  background-color: #40db46;
+  cursor: pointer;
+}
+
+.note {
+  background-color: #fff475;
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 100px;
+}
+
+/* .delete-button {
+  background-color: #ffd175;
+} */
+/* .circleBg:hover {
+  width: 18px;
+  height: 18px;
+  background-color: #ffd175;
+  border-radius: 100px;
+} */
